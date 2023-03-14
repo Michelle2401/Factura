@@ -32,6 +32,27 @@ namespace Vista
             }
             errorProvider1.Clear();
 
+
+            Menu menuFormulario = new Menu();
+            Hide();
+            menuFormulario.Show();
+
+        }
+
+
+
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (ContraseñatextBox.PasswordChar == '*')
+            {
+                ContraseñatextBox.PasswordChar = '\0';
+            }
+            else
+            {
+                ContraseñatextBox.PasswordChar = '*';
+            }
+
         }
     }
 }
