@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.UsuariotextBox = new System.Windows.Forms.TextBox();
             this.ContraseñatextBox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Mostrarcontraseña = new System.Windows.Forms.Button();
             this.Cancelarbutton = new System.Windows.Forms.Button();
             this.Aceptarbutton = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
@@ -78,28 +79,29 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.Info;
-            this.pictureBox1.Image = global::Vista.Properties.Resources.iniciar_sesion__4_;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(277, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(134, 128);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // button3
+            // Mostrarcontraseña
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.Info;
-            this.button3.Image = global::Vista.Properties.Resources.ojo;
-            this.button3.Location = new System.Drawing.Point(244, 55);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(27, 23);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.Mostrarcontraseña.BackColor = System.Drawing.SystemColors.Info;
+            this.Mostrarcontraseña.Image = ((System.Drawing.Image)(resources.GetObject("Mostrarcontraseña.Image")));
+            this.Mostrarcontraseña.Location = new System.Drawing.Point(244, 55);
+            this.Mostrarcontraseña.Name = "Mostrarcontraseña";
+            this.Mostrarcontraseña.Size = new System.Drawing.Size(27, 23);
+            this.Mostrarcontraseña.TabIndex = 2;
+            this.Mostrarcontraseña.UseVisualStyleBackColor = false;
+            this.Mostrarcontraseña.Click += new System.EventHandler(this.button3_Click);
             // 
             // Cancelarbutton
             // 
             this.Cancelarbutton.BackColor = System.Drawing.SystemColors.Info;
-            this.Cancelarbutton.Image = global::Vista.Properties.Resources.boton_x__3_;
+            this.Cancelarbutton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.Cancelarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Cancelarbutton.Image")));
             this.Cancelarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Cancelarbutton.Location = new System.Drawing.Point(169, 112);
             this.Cancelarbutton.Name = "Cancelarbutton";
@@ -113,7 +115,7 @@
             // Aceptarbutton
             // 
             this.Aceptarbutton.BackColor = System.Drawing.SystemColors.Info;
-            this.Aceptarbutton.Image = global::Vista.Properties.Resources.aceptar__3_;
+            this.Aceptarbutton.Image = ((System.Drawing.Image)(resources.GetObject("Aceptarbutton.Image")));
             this.Aceptarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Aceptarbutton.Location = new System.Drawing.Point(63, 113);
             this.Aceptarbutton.Name = "Aceptarbutton";
@@ -141,7 +143,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.Mostrarcontraseña);
             this.Controls.Add(this.Cancelarbutton);
             this.Controls.Add(this.Aceptarbutton);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -161,7 +163,7 @@
 
         private System.Windows.Forms.Button Aceptarbutton;
         private System.Windows.Forms.Button Cancelarbutton;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Mostrarcontraseña;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;

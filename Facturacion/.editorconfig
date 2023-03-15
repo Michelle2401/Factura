@@ -1,0 +1,16 @@
+﻿[*.cs]
+
+# Default severity for analyzer diagnostics with category 'Style'
+dotnet_analyzer_diagnostic.category-Style.severity = warning
+
+# IDE0005: El uso de la directiva no es necesario.
+dotnet_diagnostic.IDE0005.severity = none
+
+# IDE0040: Agregar modificadores de accesibilidad
+dotnet_diagnostic.IDE0040.severity = none
+
+# IDE0055: Fijar formato
+dotnet_diagnostic.IDE0055.severity = none
+
+# IDE0058: El valor de la expresión no se utiliza nunca.
+dotnet_diagnostic.IDE0058.severity = silent
